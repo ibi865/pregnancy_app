@@ -139,8 +139,9 @@ Android Emulator or Physical Device
 
 📸 Screen Shots 
 
-<img width="1080" height="2400" alt="ss1" src="https://github.com/user-attachments/assets/07ba771e-5129-4cfe-ac60-b6df94835f2b" />
+<img src="https://github.com/user-attachments/assets/07ba771e-5129-4cfe-ac60-b6df94835f2b" width="280" alt="ss1" />
 
-<img width="1080" height="2400" alt="ss2" src="https://github.com/user-attachments/assets/13012b60-0dac-4ac0-9881-29461eba3a4b" />
+<img src="https://github.com/user-attachments/assets/13012b60-0dac-4ac0-9881-29461eba3a4b" width="280" alt="ss2" />
 
-<img width="1080" height="2400" alt="ss3" src="https://github.com/user-attachments/assets/6e60a9fa-8fee-4bc1-bed3-33f4d649591a" />
+<img src="https://github.com/user-attachments/assets/6e60a9fa-8fee-4bc1-bed3-33f4d649591a" width="280" alt="ss3" />
+
