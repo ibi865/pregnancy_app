@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/fonts/app_fonts.dart';
+import '../../../resources/assets/images_assets.dart';
 
 class HomeCategories extends StatelessWidget {
   const HomeCategories({super.key});
@@ -10,14 +11,14 @@ class HomeCategories extends StatelessWidget {
   Widget build(BuildContext context) {
     // Data list mimicking the design
     final categories = [
-      {'icon': Icons.spa_outlined, 'label': 'massage'.tr, 'color': AppColors.pastelPink, 'iconColor': AppColors.primaryColor},
-      {'icon': Icons.pool_outlined, 'label': 'foot_spa'.tr, 'color': AppColors.pastelBlue, 'iconColor': const Color(0xFF42A5F5)}, // Blue
-      {'icon': Icons.restaurant_menu_outlined, 'label': 'nutritionist'.tr, 'color': AppColors.pastelPurple, 'iconColor': const Color(0xFFAB47BC)}, // Purple
-      {'icon': Icons.fitness_center_outlined, 'label': 'fitness'.tr, 'color': AppColors.pastelPink, 'iconColor': AppColors.primaryColor},
-      {'icon': Icons.baby_changing_station_outlined, 'label': 'lactation'.tr, 'color': AppColors.pastelPink, 'iconColor': AppColors.primaryColor},
-      {'icon': Icons.healing_outlined, 'label': 'therapy'.tr, 'color': AppColors.pastelBlue, 'iconColor': const Color(0xFF5C6BC0)}, // Indigo
-      {'icon': Icons.home_work_outlined, 'label': 'home_care'.tr, 'color': AppColors.pastelPink, 'iconColor': AppColors.primaryColor},
-      {'icon': Icons.child_care_outlined, 'label': 'baby_care'.tr, 'color': AppColors.pastelBlue, 'iconColor': const Color(0xFF29B6F6)}, // Light Blue
+      {'icon': ImageAssets.massageIcon, 'label': 'massage'.tr, 'color': AppColors.pastelPink, 'iconColor': AppColors.primaryColor},
+      {'icon': ImageAssets.footSpaIcon, 'label': 'foot_spa'.tr, 'color': AppColors.pastelBlue, 'iconColor': const Color(0xFF42A5F5)}, // Blue
+      {'icon': ImageAssets.nutritionistIcon, 'label': 'nutritionist'.tr, 'color': AppColors.pastelPurple, 'iconColor': const Color(0xFFAB47BC)}, // Purple
+      {'icon': ImageAssets.fitnessIcon, 'label': 'fitness'.tr, 'color': AppColors.pastelPink, 'iconColor': AppColors.primaryColor},
+      {'icon': ImageAssets.lactationIcon, 'label': 'lactation'.tr, 'color': AppColors.pastelPink, 'iconColor': AppColors.primaryColor},
+      {'icon': ImageAssets.therapyIcon, 'label': 'therapy'.tr, 'color': AppColors.pastelBlue, 'iconColor': const Color(0xFF5C6BC0)}, // Indigo
+      {'icon': ImageAssets.homeCareIcon, 'label': 'home_care'.tr, 'color': AppColors.pastelPink, 'iconColor': AppColors.primaryColor},
+      {'icon': ImageAssets.babyCareIcon, 'label': 'baby_care'.tr, 'color': AppColors.pastelBlue, 'iconColor': const Color(0xFF29B6F6)}, // Light Blue
     ];
 
     return Column(
@@ -88,10 +89,10 @@ class HomeCategories extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
-            category['icon'],
-            color: category['iconColor'], 
-            size: 32,
+          Image.asset(
+            category['icon'] as String,
+            width: 32,
+            height: 32,
           ),
           const SizedBox(height: 8),
           Text(

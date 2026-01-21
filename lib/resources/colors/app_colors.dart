@@ -29,4 +29,9 @@ class AppColors {
   static const Color verifiedGreen = Color(0xFF4CAF50);
   static const Color starYellow = Color(0xFFFFC107);
   static const Color tagBackground = Color(0xFFF5F5F5);
+  
+  // New colors
+  static const Color pregnancyTextColor = Color(0xFF1E2939); // For PregnancyUAE text
+  static const Color searchIconColor = Color(0xFFE60076); // For search icon
+  static const Color zinc800 = Color(0xFF27272A); // For Week 18 text
 }

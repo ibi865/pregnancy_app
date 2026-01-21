@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../resources/colors/app_colors.dart';
 import '../../../resources/fonts/app_fonts.dart';
+import '../../../resources/assets/images_assets.dart';
 
 class HomeSearchBar extends StatelessWidget {
   const HomeSearchBar({super.key});
@@ -29,10 +31,14 @@ class HomeSearchBar extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Icon(
-            Icons.search_rounded,
-            color: AppColors.primaryColor,
-            size: 26,
+          SvgPicture.asset(
+            ImageAssets.searchIconAsset,
+            width: 26,
+            height: 26,
+            colorFilter: ColorFilter.mode(
+              AppColors.searchIconColor, // #E60076
+              BlendMode.srcIn,
+            ),
           ),
           const SizedBox(width: 12),
           Text(

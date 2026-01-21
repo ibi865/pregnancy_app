@@ -4,7 +4,8 @@ import '../colors/app_colors.dart';
 
 
 class AppFonts {
-  static const String fontFamily = 'Outfit'; // Assuming Outfit is used
+  static const String fontFamily = 'Poppins'; // Changed to Poppins
+  static const String originalFontFamily = 'Outfit'; // Original font family
 
   static TextStyle get headlineLarge => const TextStyle(
         fontSize: 24,
